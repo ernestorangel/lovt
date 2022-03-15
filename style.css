@@ -1,0 +1,198 @@
+* {
+  font-family: 'Ropa Sans';
+  border: 0px solid red;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 700px;
+  margin: auto;
+  background-color: lightcoral;
+}
+
+header {
+  height: 70px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 0;
+  background-color: #FFFFFF;
+}
+
+#logoHolder {
+  padding: 12px 5%;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+}
+
+#sloganHolder {
+  padding-top: 6px;
+  padding-left: 4px;
+}
+
+#logo {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  color: #777777;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 15px;
+  color: #AAAAAA;
+}
+
+section {
+  background-color: #FFFFFF;
+}
+
+#firstSection {
+  height: 420px;
+}
+
+#carousel {
+  margin: 1% 5%;
+  height: 86%;
+  vertical-align: middle;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-image: url("img/carrossel.svg");
+}
+
+#ads {
+  margin: 0% 5%;
+  width: auto;
+  height: 320px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#leftPanel {
+  background-color: #EEEEEE;
+  margin-right: 18%;
+}
+
+#leftAd {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("img/adNew.svg");
+  height: 60%;
+}
+
+#leftTextArea {
+  height: 40%;
+}
+
+#pricePanel {
+  height: 40%;
+  padding: 10px 15px;
+  font-size: 30px;
+  color: #777777;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+
+#newTag {
+  padding-left: 20px;
+  color: #FFFFFF;
+  background-color: #51D275;
+  border-radius: 20px;
+}
+
+#leftText {
+  padding: 0px 15px;
+  height: 60%;
+  background-color: #EEEEEE;
+  color: #777777;
+  text-align: justify;
+  font-size: 80%;
+}
+
+#rightPanel {
+  margin-left: 18%;
+}
+
+#rightAd {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("img/adSale.svg");
+  height: 60%;
+}
+
+#rightText {
+  height: 40%;
+  background-color: #EEEEEE;
+}
+
+
+#categories {
+  height: 600px;
+}
+
+.categoriesPanel {
+  padding: 4% 5%;
+  margin: 2% 5%;
+  height: 20%;
+  filter:opacity(60%);
+}
+
+.categoriesTitle {
+  padding: 4% 5%;
+  margin-top: 2%;
+  height: 20%;
+  color:#888888;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.categoriesText {
+  color:#FFFFFF;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+#industrialPanel {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("img/industrial.svg");
+}
+
+#modernPanel {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("img/modern.svg");
+}
+
+#classicPanel {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("img/classic.svg");
+}
+
+footer {
+  height: 330px;
+  background-color: #333333;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+}
+
+.footerPanel {
+  width: 100%;
+  height: 100%;
+}
+
+#map {
+  width: 80%;
+  height: 70%;
+  margin: 10% 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("img/map.svg");
+}
