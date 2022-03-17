@@ -7,20 +7,36 @@
 }
 
 body {
-  width: 700px;
+  width: 800px;
   margin: auto;
-  background-color: lightcoral;
+  background-color: grey;
 }
 
 header {
-  height: 70px;
+  height: 60px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
   border-radius: 0;
   background-color: #FFFFFF;
 }
 
+#menuIcon {
+  margin-left: 300px;
+  padding-top: 10px;
+  width: 25px;
+}
+
+.menuIconBar {
+  height:3px;
+  margin-top: 4px;
+  background-color: #AAAAAA;
+}
+
+#headerHolder {
+  height: 70px;
+}
+
 #logoHolder {
-  padding: 12px 5%;
+  padding: 8px 7%;
   display: grid;
   grid-template-columns: auto 1fr 1fr;
 }
@@ -50,22 +66,51 @@ section {
 }
 
 #firstSection {
-  height: 420px;
+  height: 350px;
+  padding: 2% 7%;
 }
 
 #carousel {
-  margin: 1% 5%;
-  height: 86%;
+  height: 95%;
   vertical-align: middle;
   background-repeat:no-repeat;
   background-size: cover;
   background-image: url("img/carrossel.svg");
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.button {
+  height: 50px;
+  width: 50px;
+  margin-top: 38%;
+  background: rgba(141, 141, 141, 0.62);
+  border-radius: 50px;
+  text-align: center;
+  color: white;
+}
+
+#leftButton {
+  margin-left: 5%;
+  background-repeat: no-repeat;
+  background-position: 20px;
+  background-size: 28%;
+  background-image: url("img/arrow.svg");
+  transform: scaleX(-1);
+}
+
+#rightButton {
+  margin-left: 80%;
+  background-repeat: no-repeat;
+  background-position: 20px;
+  background-size: 28%;
+  background-image: url("img/arrow.svg");
 }
 
 #ads {
-  margin: 0% 5%;
+  padding: 1% 7%;
   width: auto;
-  height: 320px;
+  height:280px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -86,33 +131,39 @@ section {
   height: 40%;
 }
 
-#pricePanel {
-  height: 40%;
+#leftPricePanel {
+  height: 50%;
   padding: 10px 15px;
   font-size: 30px;
   color: #777777;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 20px;
+  column-gap: 0px;
 }
 
 #newTag {
-  padding-left: 20px;
+  height: 25px;
+  width: 70px;
+  margin-left: 5px;
+  padding-left: 13px;
+  padding-top: 0px;
+  font-size: 25px;
   color: #FFFFFF;
   background-color: #51D275;
   border-radius: 20px;
 }
 
 #leftText {
-  padding: 0px 15px;
+  padding: 2px 15px;
   height: 60%;
   background-color: #EEEEEE;
   color: #777777;
   text-align: justify;
-  font-size: 80%;
+  font-size: 70%;
 }
 
 #rightPanel {
+  background-color: #EEEEEE;
   margin-left: 18%;
 }
 
@@ -123,14 +174,43 @@ section {
   height: 60%;
 }
 
-#rightText {
+#rightTextArea {
   height: 40%;
-  background-color: #EEEEEE;
 }
 
+#rightPricePanel {
+  height: 50%;
+  padding: 10px 15px;
+  font-size: 30px;
+  color: #777777;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 0px;
+}
+
+#saleTag {
+  height: 25px;
+  width: 70px;
+  margin-left: 5px;
+  padding-left: 13px;
+  padding-top: 0px;
+  font-size: 25px;
+  color: #FFFFFF;
+  background-color: #DC9730;
+  border-radius: 20px;
+}
+
+#rightText {
+  padding: 2px 15px;
+  height: 60%;
+  background-color: #EEEEEE;
+  color: #777777;
+  text-align: justify;
+  font-size: 70%;
+}
 
 #categories {
-  height: 600px;
+  height: 500px;
 }
 
 .categoriesPanel {
@@ -141,18 +221,16 @@ section {
 }
 
 .categoriesTitle {
-  padding: 4% 5%;
-  margin-top: 2%;
-  height: 20%;
+  padding: 8% 5% 5% 5%;
+  height: 10%;
   color:#888888;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
 }
 
 .categoriesText {
   color:#FFFFFF;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
 }
@@ -176,7 +254,7 @@ section {
 }
 
 footer {
-  height: 330px;
+  height: 280px;
   background-color: #333333;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -190,9 +268,55 @@ footer {
 
 #map {
   width: 80%;
-  height: 70%;
-  margin: 10% 10%;
+  height: auto;
+  margin: 13% 10% 10% 15%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-image: url("img/map.svg");
+}
+
+#footerTextArea {
+  color:white;
+  padding-left: 30%;
+  padding-top: 13%;
+}
+
+#info {
+  line-height: 30px;
+  font-size: 14px;
+}
+
+#socialMediaTitle {
+  margin-top: 15px;
+  line-height: 15px;
+  font-size: 14px;
+}
+
+#socialMediaPanel {
+  margin-top:5px;
+  height: 27px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#socialMediaLogo {
+  padding-top: 5px;
+}
+
+#instagram {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("img/instagramLogo.svg");
+}
+
+#facebook {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("img/facebookLogo.svg");
+}
+
+#whatsapp {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("img/whatsappLogo.svg");
 }
